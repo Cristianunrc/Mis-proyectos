@@ -5,7 +5,7 @@ float suma (float x, float y);
 float resta (float x, float y);
 float producto (float x, float y);
 void division (float x, float y);
-float raiz (float x);
+void raiz (float x);
 void exponente (float x, float y);
 float coseno (float x);
 float seno (float x);
@@ -55,7 +55,7 @@ int main(){
 				 	
 			case 5 : printf("Ingrese la raiz: ");
 					 scanf("%f",&a);	
-					 printf ("%.2f",raiz(a));
+					 raiz(a);
 					 break;
 					 
 			case 6 : printf("Ingrese el numero: ");
@@ -109,8 +109,12 @@ void division (float x, float y){
 	}	
 }
 
-float raiz (float x){
-	return sqrt(x);
+void raiz (float x){
+	if (x < 0){
+		printf ("Error matematico.");
+	}else{
+		printf ("%.2f",sqrt(x));
+	}
 }
 
 void exponente (float x, float y){
