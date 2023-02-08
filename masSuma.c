@@ -59,10 +59,10 @@ void filaConMasSuma (TArreglo arre){
 	int x = 0, y = 0;
 	int fila1 = sumaFila (arre, x, y);
 	
-	x = 1, y = 0;
+	x ++;
 	int fila2 = sumaFila (arre, x, y);
 	
-	x = 2, y = 0;
+	x ++;
 	int fila3 = sumaFila (arre, x, y);
 	
 	if (fila1 > fila2 && fila1 > fila3){
