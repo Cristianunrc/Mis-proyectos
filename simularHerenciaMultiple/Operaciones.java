@@ -1,8 +1,11 @@
 package simularHerenciaMultiple;
 
-// La clase Operaciones implementa la interface Operaciones2 y a su vez Operaciones2 hereda Operaciones1.
-// Se van a implementar los metodos las dos interfaces.
-public class Operaciones implements Operaciones2 {
+/**
+ * La clase Operaciones implementa la interface Operaciones3.
+ * Donde Operaciones3 hereda de Operaciones2 y ésta hereda de Operaciones1. 
+ */  
+
+public class Operaciones implements Operaciones3 {
 	
 	public int suma (int x, int y) {
 		return x + y;
@@ -18,6 +21,14 @@ public class Operaciones implements Operaciones2 {
 	
 	public int dec (int y) {
 		return y--;
+	}
+	
+	public int prod (int x, int y) {
+		return x * y;
+	}
+	
+	public int cuad (int z) {
+		return z * z;
 	}
 
 }
